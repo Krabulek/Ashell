@@ -57,6 +57,8 @@ int main(int argc, char **argv) {
 
         if (bufor <= 1) {
             fprintf(stderr, "ASHELL: Wpisz komendę.\n");
+			free(linia);
+			free(argumenty);
             continue;
         }
 
